@@ -1,0 +1,276 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255, 255, 255);
+    
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 265px;
+    max-width: 265px;
+    background: #f56785;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+
+    background: #f56785;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #f56785;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #f56785;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #f56785;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #fa4b71;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.logo{
+    max-width: 250px;
+    max-height: 250px;
+    float: left;
+}
+#Barrapesquisa{
+    margin-bottom:10px ;
+    margin-top: 30px;
+}
+.MangaBox{
+    height: 440px;
+    background-color:rgb(255, 255, 255);
+    display: block; 
+    margin: 0px auto;
+    width: 250px;
+    box-shadow: 2px 1px 10px rgb(107, 79, 89);
+    float: auto;
+    margin-bottom: 20px;
+    
+
+}
+.MangaText{
+    font-family: 'Poppins', sans-serif;
+    color: brown;
+    text-align: center;
+
+}
+.MangaImg{
+    width: 238px;
+    height: 357px;
+    outline: rgb(201, 201, 201) solid 1px;
+    text-align: center;
+}
+#sidebarCollapse{
+    align-self: flex-start;
+    display: inline-flex;
+    border: none;
+    outline: 1px solid rgb(216, 216, 216);
+}
+.Sep{
+    padding-top: 20px;
+}
+.ML{
+    padding-left: 50px;
+    width: 100%;
+}
+.MangaTextG{
+    font-family: 'Poppins', sans-serif;
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+}
+.MangaImg1{
+    width: 172px;
+    height: 230px;
+    outline: rgb(201, 201, 201) solid 1px;
+    text-align: center;
+}
+.MangaBox1{
+    padding: 10px;
+    height: 250px;
+    background-color:rgb(255, 255, 255);
+    width: 1200px;
+    box-shadow: 2px 1px 10px rgb(107, 79, 89);
+    float: left;
+    margin-bottom: 20px;
+}
+.MangaText1{
+    font-family: 'Poppins', sans-serif;
+    color: brown;
+}
+.MangaP{
+    width:84%;
+    float: right;
+}
+.MangaBox2{
+    outline: black 1px solid;
+    width: 1400px;
+    padding:10px;
+    height: 600px;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 20px;
+    box-shadow: 2px 1px 10px rgb(107, 79, 89);
+    margin-left: 100px;
+}
+
+.Seguidos{
+    width: 680px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color: rgb(231, 231, 231);
+}
+.MangaText2{
+    font-family: 'Poppins', sans-serif;
+    color: brown;
+    text-align: justify;
+    margin-right: 10px;
+}
+.MangaImg2{
+    width: 172px;
+    height: 230px;
+    outline: rgb(201, 201, 201) solid 1px;
+    float: left;
+    margin-right: 10px;
+}
+.hamburguer{
+    height: 20px;
+}
+#cabeca{
+    background: url('https://img.freepik.com/vetores-gratis/plano-de-fundo-padrao-com-design-tematico-japones_1048-14215.jpg?size=626&ext=jpg'); 
+    width: auto;
+    height: auto;
+    margin: 1px;
+}
+.cabeca{
+margin: 30px;
+
+}
+
+.dark-mode {
+    
+    
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;}
+.dark-mode:h1 {
+
+    color:white
+
+
+
+}
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
+    <title>Mangá.Co</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/Projeto Mangaco Código/css/Style.css">
+    <link rel="shortcut icon" href="images/kanji.png" type="image/x-icon">
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img class="logo" src="https://media.discordapp.net/attachments/752554937107349544/891025563450486845/Sem_Titulo-1.png" alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Menu:</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="/Projeto Mangaco Código/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/Projeto Mangaco Código/html/seguidos.html">Seguidos</a>
+                        </li>
+                        <li>
+                            <a href="/Projeto Mangaco Código/html/Lançamentos.html">Lançamentos</a>
+                        </li>
+                        <li>
+                            <a href="#">Categorias</a>
+                        </li>
+                         <li>
+                            <a href="/Projeto Mangaco Código/html/cadastro.html">Cadastro</a>
+                        </li>
+                         <li>
+                            <a href="/Projeto Mangaco Código/html/login.html">Login</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Fontes</a>
+                    <ul class="collapse list-unstyled" id="Submenu">
+                        <li>
+                            <a href="https://mangadex.org">Mangadex</a>
+                        </li>
+                        <li>
+                            <a href="https://mangalivre.net">Mangalivre</a>
+                        </li>
+                        <li>
+                            <a href="https://mangayabu.top">MangaYabu</a>
+                        </li>
+    
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Extra</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">---</a>
+                        </li>
+                        <li>
+                            <a href="#">---</a>
+                        </li>
+                        <li>
+                            <a href="#">---</a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+            
+            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/551299839&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/dayasteroid" title="Daniel Florian" target="_blank" style="color: #cccccc; text-decoration: none;">Daniel Florian</a> · <a href="https://soundcloud.com/dayasteroid/seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-ed-part-sectionfukashigi-no-carte" title="Seishun Buta Yarou Wa Bunny Girl Senpai No Yume Wo Minai ED [Part Section]「Fukashigi No Carte」" target="_blank" style="color: #cccccc; text-decoration: none;">Seishun Buta Yarou Wa Bunny Girl Senpai No Yume Wo Minai ED [Part Section]「Fukashigi No Carte」</a></div>
+
+            <div>
+
+                <button type="button" onclick="darkMode()">Modo Escuro</button>
+
+                    <script>
+                             function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+                    </script>
+            </div>
+        
+        </nav>
+    
+           
+        </nav>
+            <div id="content">
+
+                <div class="row">
+
+                    <input id="Barrapesquisa" class="form-control" type="text" placeholder="Pesquisa">
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Tags</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Romance</option>
+                        <option>Ação</option>
+                        <option>Sci-fi</option>
+                        <option>Drama</option>
+                        <option>Comédia</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <button type="button" id="sidebarCollapse" class="mb-4">
+                    <i class="align-left"></i>
+                    <span> Menu </span>
+                </button>
+            
+            <p class="MangaTextG">
+                Lançamentos
+            </p>
+
+            <br>
+
+            <div class="col" style="padding-left: 27px">
+                <div class="MangaBox1">  
+                    <img class="MangaImg1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.themoviedb.org%2Ft%2Fp%2Fw130_and_h195_bestv2%2F1UrwyKMXa0DDMv9GTpgdtzWhTrm.jpg&f=1&nofb=1" alt="">
+                    <div class="MangaP">
+                        <p class="MangaText1">1. The Promised Neverland, Temporada 2 Se assistiu à primeira temporada dessa incrível série de animação, é certo que estava esperando ver esse anime em nossa lista. The Promised Neverland é sem dúvida um dos melhores animes dos anos recentes.Na série, nós acompanhamos as crianças órfãs de Grace Field em uma jornada além das muralhas que os mantinham presos, assim como precisarão fazer de tudo para sobreviver no estranho mundo externo. Conheça suas viagens e os acompanhe em sua liberdade recém-adquirida</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="padding-left: 27px">
+                <div class="MangaBox1">  
+                    <img class="MangaImg1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.UdIOABnyLv-ozVn-wZRl0gHaJ3%26pid%3DApi&f=1" alt="">
+                    <div class="MangaP">
+                        <p class="MangaText1">3. My Hero Academia, Temporada 5 Também conhecido pelo seu nome original Boku no Hero Academia, esse anime volta em 2021 para a sua quinta temporada! Ele é considerado um dos melhores animes dessa geração e por isso não podia ficar de fora do nosso guia de animes 2021. Espera-se que essa temporada acompanhe os eventos do arco Joint Training do mangá, uma das mais elogiadas. Por conta dessa adaptação, podemos esperar uma das temporadas com mais ação. Se está ansioso para saber o que acontece a seguir com os alunos da U.A. Highschool e está interessado em muita pancadaria, achamos que a temporada vá cumprir com suas expectativas. Além do lançamento programado para março, vale notar que o terceiro filme do anime também lançará, mas no final do ano.</p>
+                    </div>
+                </div>
+            </div><div class="col" style="padding-left: 27px">
+                <div class="MangaBox1">  
+                    <img class="MangaImg1" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fes.web.img2.acsta.net%2Fpictures%2F21%2F01%2F04%2F13%2F08%2F0129602.jpg&f=1&nofb=1" alt="">
+                    <div class="MangaP">
+                        <p class="MangaText1">Sk8 the Infinity Uma das estreias mais esperadas de 2021, Sk8 the Infinity tem como tema uma corrida de skates chamada S. Um de seus principais temas será o crescimento dos personagens. um elenco de personagens interessantes e com personalidades que afetam seu estilo de andar de skate, poderemos ver corridas bastante disputadas e diferentes ao longo da série.</p>
+                    </div>
+                </div>
+            </div><div class="col" style="padding-left: 27px">
+                <div class="MangaBox1">  
+                    <img class="MangaImg1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.Bo6eoEkusMXlafj1unFHXAAAAA%26pid%3DApi&f=1" alt="">
+                    <div class="MangaP">
+                        <p class="MangaText1">Dr. Stone: Stone Wars Outro anime bastante esperado, ele é a continuação de um anime do ano passado, mas com outro nome. A história acompanha um jovem gênio chamado Senku Ishigami, que é transformado em pedra junto com seus amigos e toda a raça humana. A diferença é que, milhares de anos depois, eles voltam à vida! Para trazer o resto da humanidade de volta, ele usará tudo o qe sabe, além de recriar a civilização como a conhecemos, usando a ciência como base. O problema: nem todo mundo concorda com a forma como o mundo será recriado e quem irá liderá-lo!</p>
+                    </div>
+                </div>
+            </div><div class="col" style="padding-left: 27px">
+                <div class="MangaBox1">  
+                    <img class="MangaImg1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.3MHrkCip0l6-X_0C_uXsCwAAAA%26pid%3DApi&f=1" alt="">
+                    <div class="MangaP">
+                        <p class="MangaText1">Horimiya Fechando nosso guia de animes 2021, Horimiya traduz bem a personalidade de seus protagonistas para o desenho, já que ele se origina de um mangá homônimo. Sua trama acompanha o relacionamento de duas pessoas, que compartilham seus “eus” secretos. Horimiya evita clichês comuns aos animes de comédia e romance, além de uma abordar relações amorosas de um modo único. O anime foi desenvolvido pelo mesmo estúdio responsável por The Promised Neverland, então espere um estilo artístico bastante parecido.</p>
+                    </div>
+                </div>
+            </div><div class="col" style="padding-left: 27px">
+                <div class="MangaBox1">  
+                    <img class="MangaImg1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.explicit.bing.net%2Fth%3Fid%3DOIP.RXGJXcpc0TB3KuN-_lMesQAAAA%26pid%3DApi&f=1" alt="">
+                    <div class="MangaP">
+                        <p class="MangaText1">Laid-Back Camp, Season 2 Dois anos após o lançamento de sua primeira temporada, Laid-Back Camp finalmente receberá a continuação de sua história. Sem nenhum enredo mirabolante, ele é perfeito para relaxar, já que mostra a rotina de um acampamento no frio, que acontece em áreas de natureza nos subúrbios japoneses.A segunda temporada acompanhará os mesmos personagens indo a novas viagens de acampamento pela região. Apesar de simples, Laid-Back Camp é um anime charmoso e de aquecer o coração.</p>
+                    </div>
+                </div>
+            </div><div class="col" style="padding-left: 27px">
+                <div class="MangaBox1">  
+                    <img class="MangaImg1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.xLafoGAQA4ImlLpCzTtEJgAAAA%26pid%3DApi&f=1" alt="">
+                    <div class="MangaP">
+                        <p class="MangaText1">Devil Slayer Movie: Infinity Train Kimetsu no Yaiba, também conhecido como Demon Slayer, foi sem dúvidas um dos maiores sucessos que vimos em 2019. Tanto por seus episódios interessantes quanto pela sua fantástica animação. No caso, não estamos aqui para falar de uma nova temporada, mas sim do filme Infinity Train. Ele deve estrear em breve no Japão e também deve chegar logo ao ocidente, considerando sua popularidade.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>
